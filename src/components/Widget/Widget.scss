@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+.widget {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex: 0.22;
+    .news {
+        border: 1px solid rgb(224, 223, 220);
+        background-color: white;
+        border-radius: 10px;
+
+        .news-header {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: large;
+            }
+        }
+
+        .news-list {
+            padding-left: 15px;
+            font-size: 15px;
+            ul {
+                list-style-position: inside;
+                li {
+ 
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+
+                span {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    color: gray;
+                    font-size: 12px;
+                    padding-left: 20px;
+                }
+            }
+            .more-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3px;
+                color: rgb(80, 80, 80);
+                width: fit-content;
+                margin-bottom: 10px;
+                padding-left: 20px;
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: rgba(223, 223, 223, 0.69);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .tags {
+        position: sticky;
+        top: 100px;
+        align-self: flex-start;
+
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .widget-bottom {
+        position: sticky;
+        top: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+
+        img {
+            display: flex;
+            align-items: flex-start;
+            // height: 4rem;
+            width: 4rem;
+        }
+
+        span {
+            font-size: 14px;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+    }
+}

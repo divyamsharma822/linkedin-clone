@@ -1,0 +1,28 @@
+:root {
+    --background: rgb(243, 242, 239);
+}
+
+.app {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+
+    .app-body {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 1000px) {
+            & > * {
+                flex: 1;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .sidebar {
+                position: static;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid lightgray;
+    background-color: white;
+    padding: 5px 0px 5px 0px; 
+    max-width: 100%;
+    top: 0;
+    position: sticky;
+    flex-wrap: wrap;
+    z-index: 999;
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        padding-left: 10vw;
+
+        img {
+            object-fit: contain;
+            height: 40px;
+            margin-right: 10px;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges; /* Firefox */
+            image-rendering: -o-crisp-edges; /* Opera */
+            image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+            image-rendering: crisp-edges;
+            -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+
+        .navbar-search {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            height: 20px;
+            color: gray;
+            border-radius: 5px;
+            background-color: #eef3f8;
+
+            input {
+                background: none;
+                outline: none;
+                border: none;
+                width: 15vw;
+                transition-property: width;
+                transition-duration: 1s;
+
+                &:focus {
+                    width: 20vw;
+                }
+            }
+        }
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        padding-right: 9vw;
+         
+        hr {
+            display: inline-block;
+            height: 100%;
+            border:  0.1px solid lightgray;
+        }
+        .logout-button{
+            border: none;
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+}
+
+//media queries
+@media only screen and (max-width: 1000px) {
+
+    .navbar {
+        justify-content: center;
+    }
+    .navbar-left,
+    .navbar-right {
+        flex: 1;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+        margin-left: 0 !important;
+    }
+    .navbar-right {
+        padding-right: 0 !important;
+    }
+    .navbar-search {
+        margin-right: 10vw;
+        display: flex;
+        flex: 1;
+    }
+}
