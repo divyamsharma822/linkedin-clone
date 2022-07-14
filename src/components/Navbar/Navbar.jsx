@@ -56,7 +56,7 @@ const Navbar = () => {
                 <hr/>
                 <NavOption title='Work' Icon={Apps} sx={{marginLeft: '10px'}}/>
                 {/* <NavOption title='Dark mode' Icon={Brightness4}/> */}
-                <button class="logout-button" onClick={handleSignout}><NavOption title='Logout' Icon={Logout}/></button>
+                <button className="logout-button" onClick={handleSignout}><NavOption title='Logout' Icon={Logout}/></button>
             </div>
         </div>
     );
