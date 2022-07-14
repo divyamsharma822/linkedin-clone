@@ -1,5 +1,5 @@
 # LinkedIn Clone
-<img style="border:2px solid white;border-radius: 5px;" src="./ss.png" />
+<img src="./ss.png" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
